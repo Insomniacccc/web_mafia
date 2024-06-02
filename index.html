@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>MafiaHUyafia</title>
+</head>
+<body>
+    <div class="game">
+        <h1>Мафия</h1>
+        <form class="count-form">
+            <label class="count-form__count">
+                <span class="count-form__count-text">Введите количество игроков</span>
+                <input class="count-form__count-input" type="number">
+            </label>
+            <button class="count-form__button" type="submit">Готово</button>
+        </form>
+
+        <form class="players-form">
+            <button class="players-form__button">Готово</button>
+        </form>
+
+        <div class="error">Вы ввели невозможное число игроков</div>
+        <div class="table">
+            <div class="table__timer">
+                <div class="table__timer-display">01:00</div>
+                <div class="table__timer-buttons">
+                    <button class="table__timer-start-button">Старт</button>
+                    <button class="table__timer-stop-button">Стоп</button>
+                    <button class="table__timer-reset-button">Перезапуск</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="logs">
+        <button class="logs__button">
+            <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 8H19M5 16H19M3 12H21" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="logs__content">
+            <div class="logs__window">
+            </div>
+            <form class="logs__form">
+                <input type="text" class="logs__input" placeholder="Напишите заметку..." required>
+                <button type="submit" class="logs__submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+<script src="timer.js"></script>
+<script src="logs.js"></script>
+</html>
