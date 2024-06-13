@@ -67,7 +67,7 @@ function handlePlayersSubmit(event) {
         return;
     }
 
-    playerInputs.forEach(playerInput => players.push({ name: playerInput.value, role: 'peace' }));
+    playerInputs.forEach(playerInput => players.push({ name: playerInput.value, role: 'civil' }));
 
     shuffle(setRoles(shuffle(players))).forEach((player, index) => {
         const playerElem = document.createElement('div');
